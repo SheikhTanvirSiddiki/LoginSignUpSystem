@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login/Signup System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div id="form-container">
+      <!-- Login Form -->
+      <div id="login-form" class="form">
+        <h2>Login</h2>
+        <input type="text" id="login-email" placeholder="Email or Mobile No" required>
+        <input type="password" id="login-password" placeholder="Password" required>
+        <button onclick="login()">Login</button>
+        <p>Don't have an account? <a href="#" onclick="showSignup()">Sign up</a></p>
+      </div>
+
+      <!-- Signup Form -->
+      <div id="signup-form" class="form hidden">
+        <h2>Sign up</h2>
+        <input type="text" id="signup-name" placeholder="Name" required>
+        <input type="email" id="signup-email" placeholder="Email" required>
+        <input type="tel" id="signup-phone" placeholder="Phone No" required>
+        <input type="password" id="signup-password" placeholder="Password" required>
+        <button onclick="signup()">Sign up</button>
+        <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+      </div>
+    </div>
+
+    <!-- Dashboard -->
+    <div id="dashboard" class="hidden">
+      <h1>Welcome to Your Dashboard</h1>
+      <p>This is your smart and good dashboard.</p>
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
