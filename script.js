@@ -1,4 +1,4 @@
-const vercelURL = 'https://your-vercel-app.vercel.app'; // Replace with your actual Vercel backend URL
+const vercelURL = 'https://login-sign-up-system.vercel.app/'; // Replace with your actual Vercel backend URL
 
 const showSignup = () => {
   document.getElementById("login-form").classList.add("hidden");
